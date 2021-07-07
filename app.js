@@ -4,11 +4,23 @@ const Intern = require('./lib/Intern');
 const renderHTML = require('./lib/generatehtml');
 const Manager = require('./lib/Manager');
 
-
 const team =[];
 // create  HTML file 
-function writeTOFile (filename ,data)
+function writeToFile (fileContent)
 {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./dist/index.html', fileContent, err => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: 'File created!'
+      });
+    });
+  });
 
 
 }
@@ -208,13 +220,11 @@ function AddTeamMembers(){
       `);
       console.log(team);
         // generate HTML file 
-        //generateHTML(team);
-        
+        //generateHTML(team);   
+
     }
     
   })
-
-
 }
 // Prompt user to input  manager data  
 function AddManager(){
@@ -295,7 +305,7 @@ function AddManager(){
         
       });
 }
-function buildTeam (){
+const buildTeam = ()=> {
   AddManager();
 }
 buildTeam();
