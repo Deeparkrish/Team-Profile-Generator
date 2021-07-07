@@ -68,10 +68,10 @@ function init(){
             name: 'managerNum',
             message: "Enter the team manager's office number :",
             validate: userInput => {
-                if (userInput && (parseInt(userInput))&&(userInput.length ===9)) {
+                if (userInput && (parseInt(userInput))&&(userInput.length === 9)) {
                   return true;
                 } else {
-                  console.log("Please enter the team manager's number- should be a number:");
+                  console.log("Please enter the team manager's number- should be a  valid ph number:");
                   return false;
                 }
             }
