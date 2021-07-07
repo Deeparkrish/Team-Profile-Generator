@@ -13,7 +13,7 @@ function writeTOFile (filenamae ,data)
 
 }
 // TO DO : Prompt user to input data  and upon successful reponse call generate HTML 
-function init(){
+function AddManager(){
     inquirer
       .prompt([
         {
@@ -81,9 +81,16 @@ function init(){
 
     ])
       .then(({managerName,managerId,managerEmail,managerNum }) => {
+        // create manager object 
         this.manager = new Manager(managerName,managerId,managerEmail,managerNum);
         console.log(this.manager);
+        // add team member 
+
+        AddTeamMembers();
         
       });
 }
-init ();
+function buildTeam (){
+  AddManager();
+}
+buildTeam();
