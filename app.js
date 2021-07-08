@@ -216,10 +216,10 @@ function AddTeamMembers(){
       `);
       console.log(team);
         // generate HTML file 
-        const filedata =generatehtml(team);
-        writeToFile (filedata);
-      
-
+        // const filedata =
+        generatehtml(team);
+        // writeToFile (filedata);
+        
 
     }
     
