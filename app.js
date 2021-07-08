@@ -1,28 +1,24 @@
+const fs =require('fs')
 const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const renderHTML = require('./lib/generatehtml');
+const generatehtml = require('./lib/generatehtml');
 const Manager = require('./lib/Manager');
 
 const team =[];
 // create  HTML file 
 function writeToFile (fileContent)
 {
-  return new Promise((resolve, reject) => {
+  // return new Promise((resolve, reject) => {
     fs.writeFile('./dist/index.html', fileContent, err => {
       if (err) {
-        reject(err);
+        throw(err);
         return;
       }
-
-      resolve({
-        ok: true,
-        message: 'File created!'
-      });
-    });
-  });
-
-
+        else{
+          console.log("file created");    
+    }
+    })
 }
 // Get  Engineer  information and add to team array 
 const  promptEngineer= () =>  {
@@ -220,7 +216,10 @@ function AddTeamMembers(){
       `);
       console.log(team);
         // generate HTML file 
-        //generateHTML(team);   
+        const filedata =generatehtml(team);
+        writeToFile (filedata);
+      
+
 
     }
     
@@ -291,7 +290,6 @@ function AddManager(){
             }
         
         }
-
 
     ])
       .then(({managerName,managerId,managerEmail,managerNum }) => {
