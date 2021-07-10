@@ -1,3 +1,4 @@
+//Add Depedencies 
 const fs =require('fs')
 const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
@@ -5,22 +6,25 @@ const Intern = require('./lib/Intern');
 const generatehtml = require('./lib/generatehtml');
 const Manager = require('./lib/Manager');
 
+// Create an array to add tema members 
 const team =[];
-// create  HTML file 
+
+// Write contents to a file 
 function writeToFile (fileContent)
 {
-  // return new Promise((resolve, reject) => {
+    // write the generated content to index.html 
     fs.writeFile('./dist/index.html', fileContent, err => {
       if (err) {
         throw(err);
         return;
       }
         else{
-          console.log("file created");    
+          console.log("file created");    // If written successfully
     }
     })
 }
-// Get  Engineer  information and add to team array 
+
+// Get  Engineer  information from commanline input 
 const  promptEngineer= () =>  {
   return inquirer
   .prompt([
@@ -91,7 +95,7 @@ const  promptEngineer= () =>  {
 
 };
 
-// get intern data 
+// Get Intern data from user input 
 const  promptIntern= () =>  {
   return inquirer
   .prompt([
@@ -162,7 +166,7 @@ const  promptIntern= () =>  {
 
 };
 
-//Add Engineer or intern
+//Add Engineer or Intern   to the team 
 function AddTeamMembers(){
   inquirer
   .prompt(
@@ -174,7 +178,7 @@ function AddTeamMembers(){
   }
   )
   .then(({ employeeType }) => {
-    if(employeeType ==='Engineer')
+    if(employeeType ==='Engineer') // If 'Engineer' option is chosen 
     {
       
       console.log(`
@@ -182,17 +186,17 @@ function AddTeamMembers(){
       Add an Engineer 
       =================
       `);
-      //Get Engineer data 
+      //Prompt user to enter  Engineer data 
       promptEngineer()
       .then (response => {
+        // Save the data by creating an engineer object
         const engineer = new Engineer (response.engName,response.engId,response.engEmail,response.engGithub);
-        team.push(engineer);
-        AddTeamMembers();
+        team.push(engineer); // push it to the team array 
+        AddTeamMembers(); // add more members if needed 
       });
       
-      // const engineer = new Engineer()
     }
-    else if (employeeType ==='Intern')
+    else if (employeeType ==='Intern')// If 'Intern' option is chosen 
     {
       // add Intern data 
       console.log(`
@@ -200,27 +204,30 @@ function AddTeamMembers(){
       Add an Intern
       =================
       `);
+      //Prompt user to enter  intern  data 
       promptIntern()
       .then (response=>{
+          // Save the data by creating an intern object
         const intern = new Intern (response.intName,response.intId,response.intEmail,response.intSchool);
-        team.push(intern);
-        AddTeamMembers();
+        team.push(intern); //add it to the team array
+        AddTeamMembers();  // add more teammembers if needed 
       });
     }
-    else 
+    else   // if Doen adding teammembers
     {
       console.log(`
       =================
       Generate HTML
       =================
       `);
+      console.log ("********In app.js: Array of Objs to be passed to generate HTML*********")
       console.log(team);
-        // generate HTML file 
-        // const filedata =
-        generatehtml(team);
-        // writeToFile (filedata);
-        
-
+        // call function to generate HTML file 
+        const filedata = generatehtml(team);
+        console.log("**** back to appp.js : File content to be written*******")
+        console.log(filedata);
+        // Call the function to write the generated content in a file 
+        writeToFile (filedata);
     }
     
   })
@@ -284,7 +291,7 @@ function AddManager(){
                 if (userInput && (parseInt(userInput))&&(userInput.length === 9)) {
                   return true;
                 } else {
-                  console.log("Please enter the team manager's number- should be a  valid ph number:");
+                  console.log("Please enter the team manager's number- should be a 9 digit ph number:");
                   return false;
                 }
             }
@@ -298,12 +305,14 @@ function AddManager(){
         //add he manager object to an  array 
         team.push(this.manager);
        
-        // add team member 
+        // add  addtional team members 
         AddTeamMembers();
         
       });
 }
+// Function to build a team of Manager/engineer and Interns.
 const buildTeam = ()=> {
+  // Call addManager function 
   AddManager();
 }
-buildTeam();
+buildTeam();  // Call buildTeam 
