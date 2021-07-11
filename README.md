@@ -16,13 +16,16 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
-  * [Contributing](#contributing)
+  * [Pseudocode](#pseudocode)
+  * [MockUp](#mockup)
+  * [ProjectDemo](#projectdemo)
   * [Testing](#testing)
-  * [Questions](#questions)
+  * [ProjectRepo](#projectrepo)
   
   
   ##  Installation
   npm install -g npm
+  npm i inquirer
 
   ##  Usage
   node app.js
@@ -31,15 +34,17 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
   This app is covered under MIT license.
 
-  ## Contributing
-  Please shoot an email if you are interested incontributing.
+  ## Pseudocode
+  
+  ##  Mockup
+  
+  ##  ProjectDemo
 
   ## Testing 
-  Use the test cases or Add  your  own test  cases in __test__ folder
+  Test cases have been addedin __test__ folder
 
-  ## Questions 
+  ## ProjectRepo 
   Git hub link: [deeparkrish](https://github.com/deeparkrish) <br/>
-  Email :kosalai17@gmail.com
 
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
 
