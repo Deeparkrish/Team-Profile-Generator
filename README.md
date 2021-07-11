@@ -23,6 +23,7 @@
   * [ProjectDemo](#projectdemo)
   * [Testing](#testing)
   * [ProjectRepo](#projectrepo)
+  * [Contribution](#contribution)
   
   
   ##  Installation
@@ -48,8 +49,8 @@
   * Upon validation, the user is  taken back to the menu option.
   * The user can add as may engineers / intern to his team.
   * When the user decides to finish building my team, then the  application is exited.
-  * The input data formatted in HTML is generated at index.html.
-  * When index.html is opened , ta nicely formatted team roster based on user input, is rendered. 
+  * The input data formatted in HTML is generated at "index.html".
+  * When index.html is opened,a nicely formatted team roster based on user input, is rendered. 
   * When the user clicks on an email address field , the default email program opens and populates the TO field of the email with the address.
   * When the user clicks on a Github username , that GitHub profile opens in a new tab.
 
@@ -61,11 +62,17 @@
   
   ##  ProjectDemo
 
-  ## Testing 
-  Test cases have been added in "__test__" folder
+  ## Testing
+  Test cases have been added in "__test__" folder </br>
+  Test Sample: </br>
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo.gif) 
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo1.gif)
+  
+  
 
   ## ProjectRepo 
   Git hub link: https://deeparkrish.github.io/Team-Profile-Generator/ 
 
+  ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
 
