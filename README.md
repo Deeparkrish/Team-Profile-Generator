@@ -61,8 +61,13 @@
   
   ##  ProjectDemo
 
-  ## Testing 
-  Test cases have been added in "__test__" folder
+  ## Testing
+  Test cases have been added in "__test__" folder </br>
+  Test Sample: </br>
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo.gif) 
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo1.gif)
+  
+  
 
   ## ProjectRepo 
   Git hub link: https://deeparkrish.github.io/Team-Profile-Generator/ 
