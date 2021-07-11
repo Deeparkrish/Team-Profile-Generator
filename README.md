@@ -26,7 +26,7 @@
   
   
   ##  Installation
-    npm install -g npm </br>
+    npm install -g npm 
     npm i inquirer
 
   ##  Usage
