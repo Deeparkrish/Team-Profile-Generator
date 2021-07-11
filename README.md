@@ -73,8 +73,9 @@
   ##  ProjectDemo
 
   ## Testing
-   Run this command to check all tests pass:
-          npm run test
+   Run this command to check all tests pass: <br/>
+      npm run test
+          
   Test cases have been added in "__test__" folder </br>
   Test Sample: </br>
   ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo.gif) 
