@@ -29,11 +29,9 @@
   ##  Installation
     npm install -g npm 
     npm i inquirer
-    
    ###  CSS:
     <link rel="stylesheet" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
 
   ##  Usage
     node app.js
@@ -75,6 +73,8 @@
   ##  ProjectDemo
 
   ## Testing
+   Run this command to check all tests pass:
+          npm run test
   Test cases have been added in "__test__" folder </br>
   Test Sample: </br>
   ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/TDD-demo.gif) 
