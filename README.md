@@ -1,9 +1,9 @@
 # Team-Profile-Generator   
   <p align="left">
-    <img src="https://img.shields.io/github/repo-size/deeparkrish/README-generator" />
-    <img src="https://img.shields.io/github/languages/top/deeparkrish/README-generator"  />
-    <img src="https://img.shields.io/github/issues/deeparkrish/README-generator" />
-    <img src="https://img.shields.io/github/last-commit/deeparkrish/README-generator" >   
+    <img src="https://img.shields.io/github/repo-size/deeparkrish/Team-Profile-Generator" />
+    <img src="https://img.shields.io/github/languages/top/deeparkrish/Team-Profile-Generator"  />
+    <img src="https://img.shields.io/github/issues/deeparkrish/Team-Profile-Generator" />
+    <img src="https://img.shields.io/github/last-commit/deeparkrish/Team-Profile-Generator" >   
   </p>
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
