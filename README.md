@@ -41,7 +41,7 @@
   ##  ProjectDemo
 
   ## Testing 
-  Test cases have been addedin __test__ folder
+  Test cases have been added in "__test__" folder
 
   ## ProjectRepo 
   Git hub link: [deeparkrish](https://github.com/deeparkrish) <br/>
