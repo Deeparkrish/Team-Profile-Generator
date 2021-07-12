@@ -71,7 +71,10 @@
 
   
   ##  ProjectDemo
-
+  #### User input/HTML generation
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/Project%20Demo.gif)
+  ### Email/Github link 
+  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/git:emailDemo.gif)
   ## Testing
    Run this command to check all tests pass: <br/>
       npm run test
