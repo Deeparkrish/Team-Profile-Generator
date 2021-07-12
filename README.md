@@ -72,8 +72,9 @@
   
   ##  ProjectDemo
   #### User input/HTML generation
-  ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/ProjectDemo.gif)
   [![Youtube](https://img.youtube.com/vi/f3hP1mj1puE/0.jpg)](https://www.youtube.com/embed/f3hP1mj1puE)
+  <a href="http://www.youtube.com/watch?feature=player_embedded&v=f3hP1mj1puE" target="_blank"><img src="http://img.youtube.com/vi/f3hP1mj1puE/0.jpg" 
+  alt="Walkthrough" width="240" height="180" border="10" /></a>
 
   ### Email/Github link 
   ![MyDemo](https://github.com/Deeparkrish/Team-Profile-Generator/blob/main/src/demo/git:emailDemo.gif)
