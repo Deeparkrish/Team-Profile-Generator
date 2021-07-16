@@ -88,7 +88,7 @@
   
 
   ## ProjectRepo 
-  Git hub link: https://deeparkrish.github.io/Team-Profile-Generator/ 
+  Git hub link: https://github.com/Deeparkrish/Team-Profile-Generator
 
   ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
